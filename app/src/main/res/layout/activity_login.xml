@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.OneWindow.sol.MobiAccount.Login"
+    android:orientation="vertical"
+    android:layout_margin="16dp">
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/login"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userText"
+        android:hint="username"
+        android:drawableLeft="@drawable/user"
+        android:drawableStart="@drawable/user"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passText"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock"
+        android:drawableStart="@drawable/lock"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_blue"
+        android:text="Login"
+        android:id="@+id/login"
+        android:textColor="#ffffff"
+        android:drawableRight="@drawable/logini_icon"
+        android:drawableEnd="@drawable/logini_icon"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkRem"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textStyle="bold"
+            android:id="@+id/register"
+            android:gravity="right|end"
+            android:textColor="@color/abc_btn_colored_borderless_text_material"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember"
+            android:id="@+id/remember"
+            android:maxLines="1"
+            android:textColor="@color/abc_btn_colored_borderless_text_material"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/checkRem"
+            android:layout_toEndOf="@+id/checkRem"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
